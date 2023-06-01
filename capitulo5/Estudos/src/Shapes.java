@@ -13,7 +13,11 @@ public class Shapes extends JPanel {
     for (int i = 0; i < 10; i++) {
       switch (choice) {
         case 1:
-          g.dr
+          g.drawRect(10 + i * 10, 10 + i * 10, 50 + i * 10, 50 + i * 10);
+          break;
+        case 2:
+          g.drawOval(10 + i * 10, 10 + i * 10, 50 + i * 10, 50 + i * 10);
+          break;
       }
     }
   }
