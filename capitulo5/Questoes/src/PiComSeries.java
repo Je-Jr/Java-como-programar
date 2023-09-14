@@ -1,4 +1,4 @@
-public class Teste {
+public class PiComSeries {
   public static void main(String[] args) {
     int numeroDeTermos = 1;
     double pi = 0.0;
