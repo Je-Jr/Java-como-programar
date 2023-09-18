@@ -19,7 +19,7 @@ public class AquecimentoGlobal {
       }
       if (pergunta == 2) {
         System.out.println(
-            "Pergunta 2: Qual e um dos principais argumentos frequentemente utilizados pelos \"ceticos\" em relacao ao aquecimento global?");
+            "Pergunta 2: Qual é um dos principais argumentos frequentemente utilizados pelos \"ceticos\" em relacao ao aquecimento global?");
         System.out.println("1-Aumento constante da temperatura global nos ultimos 10 anos*.");
         System.out.println("2-Reducao drastica das emissoes de CO2.");
         System.out.println("3-Emissoes de CO2 nao tem impacto sobre o clima.");
