@@ -7,8 +7,11 @@ import java.security.SecureRandom;
  * c) 6, 10, 14, 18, 22.
  */
 
-public class NumerosAleatorios {
-  public static void main(String[] args) {
+public class NumeroAleatorio {
+  public static int createRandomNumber() {
+    SecureRandom randomNumber = new SecureRandom();
+    int n = randomNumber.nextInt(100);
+    return n;
     // SecureRandom randomNumber = new SecureRandom();
     // for (int i = 0; i < args.length; i++) {
     //   int n = 2 + 2 * randomNumber.nextInt(5);
@@ -21,10 +24,11 @@ public class NumerosAleatorios {
     //   System.out.println(n);
     // }
 
-    SecureRandom randomNumber = new SecureRandom();
-    for (int i = 0; i < args.length; i++) {
-      int n = 6 + 4 * randomNumber.nextInt(5);
-      System.out.println(n);
-    }
+    // SecureRandom randomNumber = new SecureRandom();
+    // for (int i = 0; i < 10; i++) {
+    //   int n = 6 + 4 * randomNumber.nextInt(5);
+    //   System.out.println(n);
+    // }
   }
+
 }
