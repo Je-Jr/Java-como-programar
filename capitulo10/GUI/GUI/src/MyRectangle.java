@@ -1,8 +1,7 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class MyRectangle extends MyShape {
-  private boolean isFilled;
+public class MyRectangle extends MyBoundedShapes {
   private static int countRectangles = 0;
 
   public MyRectangle() {
@@ -10,8 +9,7 @@ public class MyRectangle extends MyShape {
   }
 
   public MyRectangle(int x1, int y1, int x2, int y2, Color color, boolean isFilled) {
-    super(x1, y1, x2, y2, color);
-    this.isFilled = isFilled;
+    super(x1, y1, x2, y2, color, isFilled);
     countRectangles = countRectangles + 1;
   }
 
@@ -19,20 +17,12 @@ public class MyRectangle extends MyShape {
     return countRectangles;
   }
 
-  public boolean isFilled() {
-    return isFilled;
-  }
-
-  public void setFilled(boolean isFilled) {
-    this.isFilled = isFilled;
-  }
-
   @Override
   public void draw(Graphics g) {
     g.setColor(getColor());
-    if(isFilled()){
-      g.fillOval(getX1(), getY1(), getX2(), getY2());
+    if (isFilled()) {
+      g.fillRect(getX1(), getY1(), getX2(), getY2());
     }
-    g.drawOval(getX1(), getY1(), getX2(), getY2());
+    g.drawRect(getX1(), getY1(), getX2(), getY2());
   }
 }
